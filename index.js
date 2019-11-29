@@ -1,6 +1,7 @@
 const logic = require('./logic')
 const data = require('./data')
 
+// some filtering objects to test the function
 
 const filteringObject = {
     category: "bal",
@@ -30,6 +31,12 @@ const filteringObject4 = {
     ID: '003'
 }
 
+const filteringObject5 = {
+    ID: '004'
+}
+
+
+// Here we call the function
 const result = logic.customFilter(data, filteringObject4)
 
 console.log(result)

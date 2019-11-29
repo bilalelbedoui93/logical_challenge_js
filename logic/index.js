@@ -1,4 +1,12 @@
 const logic = {
+    /**
+     * It takes two variables: an array with all the data and an object with the filtering parameters
+     * 
+     * @param {Array} dataArray 
+     * @param {Object} filteringObject 
+     * 
+     * @returns An array with the results 
+     */
     
     customFilter(dataArray, filteringObject) {
 
@@ -8,8 +16,6 @@ const logic = {
 
             let match, matchRegions = false
             for (let key in filteringObject) {
-
-                debugger
                 
                 if (key !== 'regions' && data.hasOwnProperty(key)) {
 
